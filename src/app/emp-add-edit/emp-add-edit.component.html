@@ -1,10 +1,19 @@
-<div>
-  mat-dialog-title
+<div mat-dialog-title>
   <h1>Employee Form</h1>
 </div>
-<div>mat-dialog-content</div>
-<div>
-  mat-dialog-actions
-  <button mat-raised-button>Cancel</button>
-  <button mat-raised-button color="primary">Save</button>
+<div mat-dialog-content class="content">
+  <div class="row">
+    <mat-form-field appearance="outline">
+      <mat-label>First name</mat-label>
+      <input matInput placeholder="Ex. Adam" />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Last Name</mat-label>
+      <input matInput placeholder="Ex. Kowalski" />
+    </mat-form-field>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-raised-button>Cancel</button>
+    <button mat-raised-button color="primary">Save</button>
+  </div>
 </div>
