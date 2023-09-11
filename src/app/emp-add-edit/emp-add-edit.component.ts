@@ -13,7 +13,7 @@ export class EmpAddEditComponent {
   education: string[] = [
     'Matric',
     'Diploma',
-    'Intedmediate',
+    'Intermediate',
     'Graduate',
     'Post Graduate',
   ];

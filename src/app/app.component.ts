@@ -40,7 +40,8 @@ export class AppComponent implements OnInit {
   }
 
   openAddEditEmpForm() {
-    this._dialog.open(EmpAddEditComponent);
+    const dialogRef = this._dialog.open(EmpAddEditComponent);
+    dialogRef.afterClosed();
   }
 
   getEmployeeList() {
@@ -64,7 +65,7 @@ export class AppComponent implements OnInit {
       this.dataSource.paginator.firstPage();
     }
   }
-  deleteEmpolyee(id: number) {
+  deleteEmployee(id: number) {
     this._empService.deleteEmployee(id).subscribe({
       next: (res) => {
         alert('Employee deleted!');
