@@ -18,8 +18,8 @@
   },
   "employees": [
     {
-      "firstName": "",
-      "lastName": "",
+      "firstName": "Grzegorz",
+      "lastName": "Dupa",
       "email": "",
       "dob": "",
       "gender": "",
@@ -27,19 +27,19 @@
       "company": "",
       "experience": "",
       "package": "",
-      "id": 1
+      "id": "1"
     },
     {
-      "firstName": "anna",
-      "lastName": "piotrowicz",
-      "email": "dipa@gmail.com",
-      "dob": "2023-09-03T22:00:00.000Z",
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "dob": "",
       "gender": "female",
-      "education": "Intermediate",
-      "company": "sdsds",
-      "experience": 3,
-      "package": 4,
-      "id": 3
+      "education": "",
+      "company": "dsadas",
+      "experience": "",
+      "package": "",
+      "id": "8qt_6SU"
     }
   ]
 }
