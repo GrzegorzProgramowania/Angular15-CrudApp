@@ -18,28 +18,28 @@
   },
   "employees": [
     {
-      "firstName": "Adam",
-      "lastName": "Kowalski",
-      "email": "email@gmail.com",
-      "dob": "2023-09-10T22:00:00.000Z",
-      "gender": "male",
-      "education": "Diploma",
-      "company": "3M",
-      "experience": 2,
-      "package": 5,
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "dob": "",
+      "gender": "",
+      "education": "",
+      "company": "",
+      "experience": "",
+      "package": "",
       "id": 1
     },
     {
-      "firstName": "Grzegorz",
-      "lastName": "Michalski",
-      "email": "michalski.grzegorz@gmail.com",
-      "dob": "2023-09-04T22:00:00.000Z",
-      "gender": "",
-      "education": "Matric",
-      "company": "Artnox",
-      "experience": 11,
+      "firstName": "anna",
+      "lastName": "piotrowicz",
+      "email": "dipa@gmail.com",
+      "dob": "2023-09-03T22:00:00.000Z",
+      "gender": "female",
+      "education": "Intermediate",
+      "company": "sdsds",
+      "experience": 3,
       "package": 4,
-      "id": 2
+      "id": 3
     }
   ]
 }
