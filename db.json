@@ -18,16 +18,28 @@
   },
   "employees": [
     {
-      "firstName": "sadas",
-      "lastName": "33",
+      "firstName": "Grzegorz",
+      "lastName": "Gardecki",
       "email": "gardecki.grzegorz@gmail.com",
-      "dob": "",
-      "gender": "",
-      "education": "",
-      "company": "",
-      "experience": "",
-      "package": "",
+      "dob": "1993-07-19T22:00:00.000Z",
+      "gender": "male",
+      "education": "Graduate",
+      "company": "Apple",
+      "experience": 3,
+      "package": 10,
       "id": 1
+    },
+    {
+      "firstName": "Adam",
+      "lastName": "Kowalski",
+      "email": "kowalski@o2.pl",
+      "dob": "",
+      "gender": "others",
+      "education": "Matric",
+      "company": "Skanska",
+      "experience": 5,
+      "package": 50,
+      "id": 2
     }
   ]
 }

@@ -76,7 +76,6 @@ export class AppComponent implements OnInit {
   deleteEmployee(id: number) {
     this._empService.deleteEmployee(id).subscribe({
       next: (res) => {
-        alert('Employee deleted!');
         this._coreService.openSnackBar('Employee deleted!', 'done');
         this.getEmployeeList();
       },
