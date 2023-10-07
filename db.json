@@ -18,28 +18,16 @@
   },
   "employees": [
     {
-      "firstName": "Grzegorz",
-      "lastName": "Dupa",
-      "email": "",
+      "firstName": "sadas",
+      "lastName": "33",
+      "email": "gardecki.grzegorz@gmail.com",
       "dob": "",
       "gender": "",
       "education": "",
       "company": "",
       "experience": "",
       "package": "",
-      "id": "1"
-    },
-    {
-      "firstName": "",
-      "lastName": "",
-      "email": "",
-      "dob": "",
-      "gender": "female",
-      "education": "",
-      "company": "dsadas",
-      "experience": "",
-      "package": "",
-      "id": "8qt_6SU"
+      "id": 1
     }
   ]
 }
