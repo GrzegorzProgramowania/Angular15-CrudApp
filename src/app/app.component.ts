@@ -6,6 +6,8 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { CoreService } from './core/core.service';
+// import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
+import { ConfirmationDialogComponent } from './confirm-dialog/confirm-dialog.component';
 
 @Component({
   selector: 'app-root',
@@ -74,21 +76,41 @@ export class AppComponent implements OnInit {
     }
   }
 
-  //działa
   deleteEmployee(id: number) {
-    const userConfirmed = window.confirm(
-      'Czy na pewno chcesz usunąć tego pracownika?'
-    );
-    if (userConfirmed) {
-      this._empService.deleteEmployee(id).subscribe({
-        next: (res) => {
-          this._coreService.openSnackBar('Employee deleted!', 'done');
-          this.getEmployeeList();
-        },
-        error: console.log,
-      });
-    }
+    const dialogRef = this._dialog.open(ConfirmationDialogComponent, {
+      data: 'Czy na pewno chcesz usunąć tego pracownika?',
+    });
+    dialogRef.afterClosed().subscribe({
+      next: (res) => {
+        if (res) {
+          // Jeśli użytkownik potwierdzi, usuń pracownika
+          this._empService.deleteEmployee(id).subscribe({
+            next: (res) => {
+              this._coreService.openSnackBar('Employee deleted!', 'done');
+              this.getEmployeeList();
+            },
+            error: console.log,
+          });
+        }
+      },
+    });
   }
+
+  //działa
+  // deleteEmployee(id: number) {
+  //   const userConfirmed = window.confirm(
+  //     'Czy na pewno chcesz usunąć tego pracownika?'
+  //   );
+  //   if (userConfirmed) {
+  //     this._empService.deleteEmployee(id).subscribe({
+  //       next: (res) => {
+  //         this._coreService.openSnackBar('Employee deleted!', 'done');
+  //         this.getEmployeeList();
+  //       },
+  //       error: console.log,
+  //     });
+  //   }
+  // }
 
   openEditForm(data: any) {
     const dialogRef = this._dialog.open(EmpAddEditComponent, {
