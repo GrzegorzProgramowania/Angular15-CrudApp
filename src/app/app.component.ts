@@ -73,14 +73,21 @@ export class AppComponent implements OnInit {
       this.dataSource.paginator.firstPage();
     }
   }
+
+  //działa
   deleteEmployee(id: number) {
-    this._empService.deleteEmployee(id).subscribe({
-      next: (res) => {
-        this._coreService.openSnackBar('Employee deleted!', 'done');
-        this.getEmployeeList();
-      },
-      error: console.log,
-    });
+    const userConfirmed = window.confirm(
+      'Czy na pewno chcesz usunąć tego pracownika?'
+    );
+    if (userConfirmed) {
+      this._empService.deleteEmployee(id).subscribe({
+        next: (res) => {
+          this._coreService.openSnackBar('Employee deleted!', 'done');
+          this.getEmployeeList();
+        },
+        error: console.log,
+      });
+    }
   }
 
   openEditForm(data: any) {

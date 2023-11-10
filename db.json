@@ -26,7 +26,7 @@
       "education": "Graduate",
       "company": "Apple",
       "experience": 3,
-      "package": 10,
+      "package": 12.5,
       "id": 1
     },
     {
@@ -38,8 +38,20 @@
       "education": "Matric",
       "company": "Skanska",
       "experience": 5,
-      "package": 50,
+      "package": 33.5,
       "id": 2
+    },
+    {
+      "firstName": "Anna",
+      "lastName": "Kowalska",
+      "email": "anna.kowalska@gmail.com",
+      "dob": "",
+      "gender": "",
+      "education": "Post Graduate",
+      "company": "Kowalska Sp.Zoo.",
+      "experience": 3,
+      "package": 15,
+      "id": 3
     }
   ]
 }
