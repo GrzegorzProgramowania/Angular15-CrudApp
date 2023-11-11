@@ -24,6 +24,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ConfirmationDialogComponent } from './confirm-dialog/confirm-dialog.component';
 // import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
+import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
