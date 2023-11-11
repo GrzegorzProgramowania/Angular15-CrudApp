@@ -54,7 +54,7 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
     MatSnackBarModule,
     NgbModule,
   ],
-  providers: [],
+  providers: [NgbActiveModal],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
