@@ -30,18 +30,6 @@
       "id": 1
     },
     {
-      "firstName": "Adam",
-      "lastName": "Kowalski",
-      "email": "kowalski@o2.pl",
-      "dob": "",
-      "gender": "others",
-      "education": "Matric",
-      "company": "Skanska",
-      "experience": 5,
-      "package": 33.5,
-      "id": 2
-    },
-    {
       "firstName": "Anna",
       "lastName": "Kowalska",
       "email": "anna.kowalska@gmail.com",

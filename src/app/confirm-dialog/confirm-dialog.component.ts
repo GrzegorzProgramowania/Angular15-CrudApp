@@ -1,5 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { Component, Inject, OnInit } from '@angular/core';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-confirm-dialog',
@@ -7,24 +7,22 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./confirm-dialog.component.scss'],
 })
 export class ConfirmationDialogComponent implements OnInit {
-  @Input() title!: string;
-  @Input() message!: string;
-  @Input() btnOkText!: string;
-  @Input() btnCancelText!: string;
-
-  constructor(private activeModal: NgbActiveModal) {}
+  constructor(
+    @Inject(MAT_DIALOG_DATA) public data: string,
+    private dialogRef: MatDialogRef<any>
+  ) {}
 
   ngOnInit() {}
 
   public decline() {
-    this.activeModal.close(false);
+    this.dialogRef.close(false);
   }
 
   public accept() {
-    this.activeModal.close(true);
+    this.dialogRef.close(true);
   }
 
   public dismiss() {
-    this.activeModal.dismiss();
+    this.dialogRef.close();
   }
 }
