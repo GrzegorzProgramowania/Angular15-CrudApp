@@ -2,7 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.9.
 
-## Development server
+## JSON server
+Run JSON Server: Before starting the development server, ensure that the JSON Server is running. Open a terminal and run:
+
+`json-server --watch db.json`
+
+## Development server - In a separate terminal
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
